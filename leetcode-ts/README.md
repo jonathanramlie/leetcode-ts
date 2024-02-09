@@ -26,11 +26,6 @@ const generateArrayNew = (length: number, defaultValue: number = 0) => {
 // new generate array length 10: 0.03ms
 // newWithoutValue generate array length 10: 0.017ms
 
-// legacy generate array length 100: 0.012ms
-// legacyWithoutValue generate array length 100: 0.001ms
-// new generate array length 100: 0.006ms
-// newWithoutValue generate array length 100: 0.005ms
-
 // legacy generate array length 10000000: 38.298ms
 // legacyWithoutValue generate array length 10000000: 17.01ms
 // new generate array length 10000000: 391.5ms
