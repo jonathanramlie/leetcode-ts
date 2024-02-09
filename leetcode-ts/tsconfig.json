@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "sourceMap": false,
+    "types": ["jest"],
+    "esModuleInterop": true
+  }
+}
