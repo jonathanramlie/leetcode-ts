@@ -31,3 +31,15 @@ const generateArrayNew = (length: number, defaultValue: number = 0) => {
 // new generate array length 10000000: 391.5ms
 // newWithoutValue generate array length 10000000: 341.524ms
 ```
+
+### Array Sort
+
+When using `.sort` the behaviour might differs based on the `compareFn`.
+If the `compareFn` are passed on the `.sort` it'll sort based on the return `compareFn`.
+But when not provided, by default the comparison will be done with converting the elements into string and ordering it on ascending.
+In cases your array already expected to be in numbers type, it might be more suitable to use `TypedArray` instead of `Array`
+
+References:
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort](MDN - Array sort behaviour)
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray](TypedArray object)
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort](TypedArray sort behaviour)
