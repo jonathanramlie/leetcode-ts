@@ -1,5 +1,4 @@
 import largestGoodInteger from "../2264-largest-3-same-digit-number-in-string";
-import rearrangeCharacters from "../2287-rearrange-characters-to-make-target-string";
 
 jest.setTimeout(150);
 
