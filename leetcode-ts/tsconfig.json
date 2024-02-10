@@ -4,6 +4,7 @@
     "module": "ESNext",
     "sourceMap": false,
     "types": ["jest"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "strictNullChecks": true
   }
 }
