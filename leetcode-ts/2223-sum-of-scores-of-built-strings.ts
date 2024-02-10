@@ -1,4 +1,4 @@
-import { generateZArray } from "./cheatsheets/z-algorithm";
+import { generateZArray } from './cheatsheets/z-algorithm';
 
 function sumScores(s: string): number {
   // In this problem we're given a string e.g. azbazbzaz

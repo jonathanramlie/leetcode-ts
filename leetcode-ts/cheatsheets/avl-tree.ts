@@ -1,4 +1,4 @@
-import { BinaryTreeComparator, TreeNode } from "./binary-tree";
+import { type BinaryTreeComparator, TreeNode } from './binary-tree';
 
 export class AVLNode<T> extends TreeNode<T> {
   height: number;
@@ -15,11 +15,11 @@ export class AVLTree<T> {
   root: AVLNode<T> | null = null;
 
   getHeight(node: AVLNode<T> | null): number {
-    return node ? node.height : 0;
+    return node !== null ? node.height : 0;
   }
 
-  getBalanceFactor(node: AVLNode<T> | null): number {
-    return this.getHeight(node?.left) - this.getHeight(node?.right);
+  getBalanceFactor(node: AVLNode<T>): number {
+    return this.getHeight(node.left) - this.getHeight(node.right);
   }
 
   updateHeight(node: AVLNode<T>): void {
@@ -29,7 +29,7 @@ export class AVLTree<T> {
 
   rotateRight(node: AVLNode<T>): AVLNode<T> {
     const leftChild = node.left;
-    if (!leftChild) return node;
+    if (leftChild === null) return node;
 
     const subTreeLeftChild = leftChild.right;
 
@@ -46,7 +46,7 @@ export class AVLTree<T> {
 
   rotateLeft(node: AVLNode<T>): AVLNode<T> {
     const rightChild = node.right;
-    if (!rightChild) return node;
+    if (rightChild === null) return node;
 
     const subTreeRightChild = rightChild.left;
 
@@ -68,7 +68,7 @@ export class AVLTree<T> {
   private _insert(
     node: AVLNode<T> | null,
     value: T,
-    comparator: BinaryTreeComparator<T>,
+    comparator: BinaryTreeComparator<T>
   ): AVLNode<T> {
     if (node === null) {
       return new AVLNode<T>(value);
@@ -93,22 +93,22 @@ export class AVLTree<T> {
     // Perform rotations to balance the tree if needed
     if (balance > 1) {
       // Left heavy
-      const result = comparator(value, node.left.value);
+      const result = comparator(value, node.left!.value);
       if (result < 0) {
         return this.rotateRight(node);
       } else {
-        node.left = this.rotateLeft(node.left);
+        node.left = this.rotateLeft(node.left!);
         return this.rotateRight(node);
       }
     }
 
     if (balance < -1) {
       // Right heavy
-      const result = comparator(value, node.right.value);
+      const result = comparator(value, node.right!.value);
       if (result > 0) {
         return this.rotateLeft(node);
       } else {
-        node.right = this.rotateRight(node.right);
+        node.right = this.rotateRight(node.right!);
         return this.rotateLeft(node);
       }
     }
@@ -119,7 +119,7 @@ export class AVLTree<T> {
 
 export function generateAVLTree<T>(
   arr: T[],
-  comparator: BinaryTreeComparator<T>,
+  comparator: BinaryTreeComparator<T>
 ): AVLTree<T> {
   const avlTree = new AVLTree<T>();
   for (const item of arr) {

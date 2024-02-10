@@ -6,7 +6,7 @@ function checkNextNumber(a: number, b: number, numberPool: string): boolean {
   const total = a + b;
 
   // Checks invalid leading zeros
-  if (total !== 0 && numberPool[0] === "0") return false;
+  if (total !== 0 && numberPool[0] === '0') return false;
 
   const totalStr = `${total}`;
   // Check if the next number is equal to total, just need to check first two
@@ -34,13 +34,13 @@ function isAdditiveNumber(num: string): boolean {
   for (let i = 1; i < num.length; ++i) {
     const firstStr = num.slice(0, i);
     // Skip if potential number has leading zeroes, which is invalid
-    if (firstStr.length > 1 && firstStr[0] === "0") continue;
+    if (firstStr.length > 1 && firstStr[0] === '0') continue;
 
     // Start from the next possible index until end
     for (let j = i + 1; j < num.length; ++j) {
       const secondStr = num.slice(i, j);
       // Skip if number is invalid
-      if (secondStr.length > 1 && secondStr[0] === "0") continue;
+      if (secondStr.length > 1 && secondStr[0] === '0') continue;
       // Here will check if these 2 number is possible to generate the next number (total of both number)
       if (
         checkNextNumber(
@@ -48,8 +48,9 @@ function isAdditiveNumber(num: string): boolean {
           Number(secondStr),
           num.slice(j, num.length)
         )
-      )
+      ) {
         return true;
+      }
     }
   }
 

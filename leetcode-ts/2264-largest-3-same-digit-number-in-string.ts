@@ -4,7 +4,7 @@ function largestGoodInteger(num: string): string {
     if (num.includes(target)) return target;
   }
 
-  return "";
+  return '';
 }
 
 export default largestGoodInteger;

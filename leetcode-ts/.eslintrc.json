@@ -8,8 +8,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "plugins": ["unused-imports"],
   "rules": {
     "@typescript-eslint/semi": "off",
-    "@typescript-eslint/space-before-function-paren": "off"
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "unused-imports/no-unused-imports": "error"
   }
 }

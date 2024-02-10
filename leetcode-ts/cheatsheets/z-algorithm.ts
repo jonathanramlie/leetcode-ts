@@ -39,7 +39,7 @@ export function generateZArray(formattedText: string): number[] {
       // Revert to latest character within common prefix
       right--;
     } else {
-      let k = i - left;
+      const k = i - left;
 
       // If right >= i, meaning there'a already a calculation with a common longest prefix on this index
       // We can check if it's still within the common prefix length

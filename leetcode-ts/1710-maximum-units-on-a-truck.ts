@@ -1,5 +1,5 @@
 function maximumUnits(boxTypes: number[][], truckSize: number): number {
-  if (!truckSize) return 0;
+  if (truckSize === 0) return 0;
 
   let total = 0;
   const sortedBoxes = boxTypes.sort((a, b) => b[1] - a[1]);

@@ -1,8 +1,8 @@
-import fullBloomFlowers from "../2251-number-of-flowers-in-full-bloom";
+import fullBloomFlowers from '../2251-number-of-flowers-in-full-bloom';
 
 jest.setTimeout(150);
 
-describe("Number of Flowers in Full Bloom", () => {
+describe('Number of Flowers in Full Bloom', () => {
   it.each([
     [
       [
@@ -23,10 +23,10 @@ describe("Number of Flowers in Full Bloom", () => {
       [2, 2, 1],
     ],
   ])(
-    "should return total flowers are viewed by the person",
+    'should return total flowers are viewed by the person',
     (flowers, people, expected) => {
       const result = fullBloomFlowers(flowers, people);
       expect(result).toEqual(expected);
-    },
+    }
   );
 });

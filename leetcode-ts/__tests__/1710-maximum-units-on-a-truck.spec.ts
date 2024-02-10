@@ -1,6 +1,6 @@
-import maximumUnits from "../1710-maximum-units-on-a-truck";
+import maximumUnits from '../1710-maximum-units-on-a-truck';
 
-const testCases: Array<[[number, number][], number, number]> = [
+const testCases: Array<[Array<[number, number]>, number, number]> = [
   [
     [
       [1, 3],
@@ -24,11 +24,11 @@ const testCases: Array<[[number, number][], number, number]> = [
 
 jest.setTimeout(150);
 
-describe("Maximum Units on a Truck", () => {
+describe('Maximum Units on a Truck', () => {
   it.each(testCases)(
-    "should return correct maximum units possible",
+    'should return correct maximum units possible',
     (boxTypes, truckSize, result) => {
       expect(maximumUnits(boxTypes, truckSize)).toEqual(result);
-    },
+    }
   );
 });

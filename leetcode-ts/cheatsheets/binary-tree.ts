@@ -1,14 +1,14 @@
 export class TreeNode<T> {
   public left: TreeNode<T> | null = null;
   public right: TreeNode<T> | null = null;
-  private _value: T;
+  private readonly _value: T;
   public count: number = 1;
 
   constructor(value: T) {
     this._value = value;
   }
 
-  public get value() {
+  public get value(): T {
     return this._value;
   }
 }
@@ -24,7 +24,7 @@ export class BinaryTree<T> {
   private _insert(
     node: TreeNode<T> | null,
     value: T,
-    comparator: BinaryTreeComparator<T>,
+    comparator: BinaryTreeComparator<T>
   ): TreeNode<T> {
     if (node === null) {
       return new TreeNode(value);
@@ -48,10 +48,10 @@ type TraversableNode = {
 } | null;
 
 // Callback returns boolean that indicates if we should skip traversal
-export function inOrderTraversal<T>(
+export function inOrderTraversal(
   node: TraversableNode,
-  callback: (node: TraversableNode) => void,
-) {
+  callback: (node: TraversableNode) => void
+): void {
   if (node === null) return;
 
   inOrderTraversal(node.left, callback);

@@ -1,4 +1,4 @@
-import pivotArray from "../2161-partition-array-according-to-given-pivot";
+import pivotArray from '../2161-partition-array-according-to-given-pivot';
 
 const testCases: Array<[number[], number, number[]]> = [
   [[9, 12, 5, 10, 14, 3, 10], 10, [9, 5, 3, 10, 10, 12, 14]],
@@ -7,11 +7,11 @@ const testCases: Array<[number[], number, number[]]> = [
 
 jest.setTimeout(150);
 
-describe("Partition Array According to Given Pivot", () => {
+describe('Partition Array According to Given Pivot', () => {
   it.each(testCases)(
-    "should return correct array arrangement",
+    'should return correct array arrangement',
     (nums, pivot, result) => {
       expect(pivotArray(nums, pivot)).toEqual(result);
-    },
+    }
   );
 });
