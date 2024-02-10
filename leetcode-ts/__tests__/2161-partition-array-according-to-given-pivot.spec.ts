@@ -1,7 +1,6 @@
 import pivotArray from "../2161-partition-array-according-to-given-pivot";
 
 const testCases: Array<[number[], number, number[]]> = [
-  /* test case: [nums, pivot, expected result]*/
   [[9, 12, 5, 10, 14, 3, 10], 10, [9, 5, 3, 10, 10, 12, 14]],
   [[-3, 4, 3, 2], 2, [-3, 2, 4, 3]],
 ];

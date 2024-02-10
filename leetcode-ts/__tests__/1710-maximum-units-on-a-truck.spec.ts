@@ -1,7 +1,6 @@
 import maximumUnits from "../1710-maximum-units-on-a-truck";
 
 const testCases: Array<[[number, number][], number, number]> = [
-  /* test case: [boxTypes, truckSize, result ]*/
   [
     [
       [1, 3],

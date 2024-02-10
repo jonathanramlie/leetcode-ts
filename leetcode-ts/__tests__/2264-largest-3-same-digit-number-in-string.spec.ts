@@ -4,7 +4,6 @@ jest.setTimeout(150);
 
 describe("Largest 3-Same-Digit Number in String", () => {
   it.each([
-    /* test case: [string, result] */
     ["6777133339", "777"],
     ["2300019", "000"],
     ["42352338", ""],

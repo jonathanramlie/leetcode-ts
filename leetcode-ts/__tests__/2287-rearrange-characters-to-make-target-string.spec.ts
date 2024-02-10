@@ -4,7 +4,6 @@ jest.setTimeout(150);
 
 describe("Rearrange Characters to Make Target String", () => {
   it.each([
-    /* test case: [string, result ]*/
     ["ilovecodingonleetcode", "code", 2],
     ["abcba", "abc", 1],
     ["abbaccaddaeea", "aaaaa", 1],
