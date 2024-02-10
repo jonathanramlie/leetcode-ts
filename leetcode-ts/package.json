@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "format": "prettier . --write --ignore-path .gitignore",
-    "prepare": "cd .. && husky leetcode-ts/.husky"
+    "prepare": "cd .. && husky install leetcode-ts/.husky"
   },
   "author": "",
   "license": "ISC",
