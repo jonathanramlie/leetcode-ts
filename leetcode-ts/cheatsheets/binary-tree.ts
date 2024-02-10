@@ -24,7 +24,7 @@ export class BinaryTree<T> {
   private _insert(
     node: TreeNode<T> | null,
     value: T,
-    comparator: BinaryTreeComparator<T>
+    comparator: BinaryTreeComparator<T>,
   ): TreeNode<T> {
     if (node === null) {
       return new TreeNode(value);
@@ -50,7 +50,7 @@ type TraversableNode = {
 // Callback returns boolean that indicates if we should skip traversal
 export function inOrderTraversal<T>(
   node: TraversableNode,
-  callback: (node: TraversableNode) => void
+  callback: (node: TraversableNode) => void,
 ) {
   if (node === null) return;
 

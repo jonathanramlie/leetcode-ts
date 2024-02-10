@@ -27,6 +27,6 @@ describe("Number of Flowers in Full Bloom", () => {
     (flowers, people, expected) => {
       const result = fullBloomFlowers(flowers, people);
       expect(result).toEqual(expected);
-    }
+    },
   );
 });

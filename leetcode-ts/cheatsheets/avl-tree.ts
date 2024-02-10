@@ -68,7 +68,7 @@ export class AVLTree<T> {
   private _insert(
     node: AVLNode<T> | null,
     value: T,
-    comparator: BinaryTreeComparator<T>
+    comparator: BinaryTreeComparator<T>,
   ): AVLNode<T> {
     if (node === null) {
       return new AVLNode<T>(value);
@@ -119,7 +119,7 @@ export class AVLTree<T> {
 
 export function generateAVLTree<T>(
   arr: T[],
-  comparator: BinaryTreeComparator<T>
+  comparator: BinaryTreeComparator<T>,
 ): AVLTree<T> {
   const avlTree = new AVLTree<T>();
   for (const item of arr) {

@@ -11,6 +11,6 @@ describe("Z Algorithm Linear Time Pattern Searching Algorithm", () => {
     "given text '%s', pattern '%s' should return %s index",
     (text, pattern, result) => {
       expect(searchPattern(text, pattern)).toBe(result);
-    }
+    },
   );
 });

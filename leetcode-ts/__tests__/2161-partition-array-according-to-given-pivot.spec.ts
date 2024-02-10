@@ -12,6 +12,6 @@ describe("Partition Array According to Given Pivot", () => {
     "should return correct array arrangement",
     (nums, pivot, result) => {
       expect(pivotArray(nums, pivot)).toEqual(result);
-    }
+    },
   );
 });

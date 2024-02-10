@@ -11,6 +11,6 @@ describe("Rearrange Characters to Make Target String", () => {
     "should return correct total possible arrangement",
     (string, target, result) => {
       expect(rearrangeCharacters(string, target)).toEqual(result);
-    }
+    },
   );
 });

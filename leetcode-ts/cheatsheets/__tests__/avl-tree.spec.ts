@@ -11,7 +11,7 @@ describe("AVL Tree", () => {
     const result = [];
     const avlTree = generateAVLTree(items, (a, b) => a - b);
     inOrderTraversal(avlTree.root, (node: AVLNode<number>) =>
-      result.push(node.value)
+      result.push(node.value),
     );
     expect(result).toEqual(expected);
   });

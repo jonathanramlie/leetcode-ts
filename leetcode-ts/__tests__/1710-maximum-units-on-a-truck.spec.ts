@@ -29,6 +29,6 @@ describe("Maximum Units on a Truck", () => {
     "should return correct maximum units possible",
     (boxTypes, truckSize, result) => {
       expect(maximumUnits(boxTypes, truckSize)).toEqual(result);
-    }
+    },
   );
 });
