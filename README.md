@@ -41,6 +41,6 @@ In cases your array already expected to be in numbers type, it might be more sui
 
 References:
 
-- (MDN - Array sort behaviour)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort]
-- (TypedArray object)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray]
-- (TypedArray sort behaviour)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort]
+- [MDN - Array sort behaviour](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [TypedArray object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
+- [TypedArray sort behaviour](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort)
