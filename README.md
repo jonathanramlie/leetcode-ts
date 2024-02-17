@@ -40,6 +40,7 @@ But when not provided, by default the comparison will be done with converting th
 In cases your array already expected to be in numbers type, it might be more suitable to use `TypedArray` instead of `Array`
 
 References:
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort](MDN - Array sort behaviour)
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray](TypedArray object)
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort](TypedArray sort behaviour)
+
+- (MDN - Array sort behaviour)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort]
+- (TypedArray object)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray]
+- (TypedArray sort behaviour)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort]
