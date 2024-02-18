@@ -39,7 +39,7 @@ function fullBloomFlowers(flowers: number[][], people: number[]): number[] {
   startArr.sort();
   endArr.sort();
 
-  const result = [];
+  const result: number[] = [];
   for (const arrivalTime of people) {
     const numOfBloomedFlower = search(startArr, arrivalTime);
     const numOfWitheredFlower = search(endArr, arrivalTime);

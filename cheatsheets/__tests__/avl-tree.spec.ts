@@ -8,7 +8,7 @@ describe('AVL Tree', () => {
       [3, 5, 7, 10, 12, 15, 18],
     ],
   ])('should correctly represent a balanced tree', (items, expected) => {
-    const result = [];
+    const result: number[] = [];
     const avlTree = generateAVLTree(items, (a, b) => a - b);
     inOrderTraversal(avlTree.root, (node: AVLNode<number>) =>
       result.push(node.value)

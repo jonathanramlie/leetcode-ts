@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "sourceMap": false,
+    "module": "CommonJS",
+    "sourceMap": true,
     "types": ["jest"],
     "esModuleInterop": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "outDir": "out"
   }
 }

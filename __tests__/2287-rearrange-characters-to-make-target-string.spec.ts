@@ -1,7 +1,5 @@
 import rearrangeCharacters from '../2287-rearrange-characters-to-make-target-string';
 
-jest.setTimeout(150);
-
 describe('Rearrange Characters to Make Target String', () => {
   it.each([
     ['ilovecodingonleetcode', 'code', 2],

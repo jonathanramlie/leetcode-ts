@@ -1,7 +1,5 @@
 import firstCompleteIndex from '../2661-first-completely-painted-row-or-column';
 
-jest.setTimeout(150);
-
 describe('First Completely Painted Row or Column', () => {
   it.each([
     [

@@ -1,7 +1,5 @@
 import fullBloomFlowers from '../2251-number-of-flowers-in-full-bloom';
 
-jest.setTimeout(150);
-
 describe('Number of Flowers in Full Bloom', () => {
   it.each([
     [

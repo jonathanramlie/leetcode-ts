@@ -11,7 +11,9 @@ function rearrangeCharacters(s: string, target: string): number {
   let count = 0;
   while (true) {
     for (const char of target) {
-      if (!(char in availableCharacters)) return count;
+      if (!(char in availableCharacters) || availableCharacters[char] === 0) {
+        return count;
+      }
       availableCharacters[char]--;
     }
 

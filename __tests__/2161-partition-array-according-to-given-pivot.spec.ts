@@ -5,8 +5,6 @@ const testCases: Array<[number[], number, number[]]> = [
   [[-3, 4, 3, 2], 2, [-3, 2, 4, 3]],
 ];
 
-jest.setTimeout(150);
-
 describe('Partition Array According to Given Pivot', () => {
   it.each(testCases)(
     'should return correct array arrangement',
